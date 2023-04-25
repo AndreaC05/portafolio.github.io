@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Portafolio</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<!-- MENU ENCABEZADO -->
+	<div class="contenedor-header">
+		<header>
+			<div class="logo">
+				<a href="#">Andrea</a>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+					<li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+					<li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+					<li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+					<li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+					<li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</header>
+	</div>
+
+	<!-- SECCION INICIO -->
+	<section id="inicio" class="inicio">  
+		<div class="contenido-banner">
+			<div class="contenedor-img">
+				<img src="img/photo.png" alt="">
+			</div>
+			<h1>Andrea Aguirre Ruiz</h1>
+			<h2>Ingeniera de Software</h2>
+			<div class="redes">
+				<a href="https://www.facebook.com/profile.php?id=100023689471443"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://www.linkedin.com/in/andrea-celeste-aguirre-ruiz-27455b272/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION SOBRE MI -->
+	<section id="sobremi" class="sobremi">
+		<div class="contenido-seccion">
+			<h2>Sobre Mí</h2>
+			<p><span>Hola, soy Andrea Aguirre.</span> Como estudiante de Ingeniería de software, estoy comprometida con el desarrollo de soluciones tecnológicas innovadoras y eficientes. Mi pasión por la tecnología y la programación me ha llevado a buscar oportunidades para aprender y mejorar mis habilidades constantemente. Me considero una persona proactiva y con capacidad para trabajar en equipo, por lo que me permite colaborar con otros profesionales para alcanzar objetivos comunes. Mi objetivo a largo plazo es convertirme en un desarrollador de software de alto nivel, capaz de abordar los desafíos tecnológicos más complejos y ofrecer soluciones innovadoras y efectivas para mejorar la calidad de vida de las personas.</p>
+
+			<div class="fila">
+				<!-- Datos personales -->
+				<div class="col">
+					<h3>Datos Personales</h3>
+					<ul>
+						<li>
+							<strong>Cumpleaños</strong>
+							05-05-2004
+						</li>
+						<li>
+							<strong>Teléfono</strong>
+							950 874 416
+						</li>
+						<li>
+							<strong>Email</strong>
+							aguirreandrea457@gmail.com
+						</li>
+						<li>
+							<strong>Dirección</strong>
+							Inca Garcilazo de la vega #136, Comas
+						</li>
+					</ul>
+				</div>
+				<!-- intereses -->
+				<div class="col">
+					<h3>Intereses</h3>
+					<div class="contenedor-intereses">
+						<div class="intereses">
+							<i class="fa-solid fa-plane"></i>
+							<span>VIAJAR</span>
+						</div>
+						<div class="intereses">
+							<i class="fa-solid fa-headphones"></i>
+							<span>MUSICA</span>
+						</div>
+						<div class="intereses">
+							<i class="fa-solid fa-photo-film"></i>
+							<span>FOTOS</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<button type="button" id="btn-descargar">
+				Descargar CV <i class="fa-solid fa-download"></i>
+				<span class="overlay"></span>
+			</button>
+		</div>
+	</section>
+
+	<!-- SECCION SKILLS -->
+	<section class="skills" id="skills">
+		<div class="contenido-seccion">
+			<h2>Skills</h2>
+			<div class="fila">
+				<!-- Technical Skill -->
+				<div class="col">
+					<h3>Technical Skills</h3>
+					<div class="skill">
+						<span>Boostrap</span>
+						<div class="barra-skill">
+							<div class="progreso"> 
+								<span>50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>HTML & CSS</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Python</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Wordpress</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>85%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Professional Skill -->
+				<div class="col">
+					<h3>Professional Skills</h3>
+					<div class="skill">
+						<span>Comunicación</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Trabajo en Equipo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Creatividad</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>88%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Dedicación</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- SECCION CURRICULUM -->
+	<section class="curriculum" id="curriculum">
+		<div class="contenido-seccion">
+			<h2>Curriculum</h2>
+			<div class="fila">
+				<div class="col izquierda">
+					<h3>Educación</h3>
+					<div class="item izq">
+						<h4>Primaria y Secundaria</h4>
+						<span class="casa">2085 San Agustín</span>
+						<span class="fecha">2011-2021</span>
+						<p></p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+					<div class="item izq">
+						<h4>Ingeniería de Software con Inteligencia Artificial</h4>
+						<span class="casa">SENATI</span>
+						<span class="fecha">2022-actual</span>
+						<p>Soy una estudiante de Ingeniería de Software apasionada por la tecnología y la innovación. Actualmente me encuentro en el tercer ciclo de la carrera, donde he adquirido solidos conocimientos en programación, Diseño de pagína web, Diseño de Base de Datos. Durante mi trayectoria académica, he realizado diversos proyectos y desafíos tecnológicos.</p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col derecha">
+					<h3>Experiencia Laboral</h3>
+					<div class="item der">
+						<h4></h4>
+						<span class="casa"></span>
+						<span class="fecha"></span>
+						<p></p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION PORTAFOLIO-->
+	<section class="portafolio" id="portafolio">
+		<div class="contenido-seccion">
+			<h2>Portafolio</h2>
+			<div class="galeria">
+				<div class="proyecto">
+					<img src="img/pro1.png" alt="">
+					<div class="overlay">
+						<h3>Mantenimiento de Alumnos</h3>
+						<p>BOOSTRAP & PHP</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/pro2.png" alt="">
+					<div class="overlay">
+						<h3>Mantenimiento de Usuarios</h3>
+						<p>BOOSTRAP & PHP</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/pro3.png" alt="">
+					<div class="overlay">
+						<h3>Mantenimiento de Cuentas Bancarias</h3>
+						<p>BOOSTRAP & PHP</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/pro5.png" alt="">
+					<div class="overlay">
+						<h3>Mantenimiento de Productos con LOGIN</h3>
+						<p>HTML, CSS, BOOSTRAP & PHP</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/pro6.jpeg" alt="">
+					<div class="overlay">
+						<h3>MACD'S</h3>
+						<p>HTML & CSS</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/pro4.jpeg" alt="">
+					<div class="overlay">
+						<h3>HomingBirds</h3>
+						<p>WORDPRESS</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCION CONTACTO -->
+	<section class="contacto" id="contacto">
+		<div class="contenido-seccion">
+			<h2>Contacto</h2>
+			<div class="fila">
+				
+				<!-- Mapa -->
+				<div class="col">
+					<img src="img/direccion.png" alt="">
+					<div class="info">
+						<ul>
+							<li>
+								<i class="fa-solid fa-location-dot"></i>Comas, Calle Inca Garcilazo de la vega #136
+							</li>
+							<li>
+								<i class="fa-solid fa-mobile"></i>
+								+51 950 874 416
+							</li>
+							<li>
+								<i class="fa-solid fa-envelope"></i>
+								Email: aguirreandrea457@gmail.com
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<a href="#inicio" class="arriba">
+			<i class="fa-solid fa-angles-up"></i>
+		</a>
+		<div class="redes">
+				<a href="https://www.facebook.com/profile.php?id=100023689471443"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://www.linkedin.com/in/andrea-celeste-aguirre-ruiz-27455b272/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+			</div>
+	</footer>
+
+	<script src="script.js"></script>
+
+
+</body>
+</html>
