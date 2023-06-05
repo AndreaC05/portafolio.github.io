@@ -40,7 +40,7 @@ window.onscroll = function(){
 
 document.getElementById('btn-descargar').addEventListener('click', function() {
     var link = document.createElement('a');
-    link.href = 'file:///E:/III%20SEMESTRE/portafolio/archivo/Andrea_Aguirre_Ruiz_CV.pdf';
+    link.href = 'https://drive.google.com/file/d/1aGey-iQUE6HNiIYzTy8gKv0slVkIm7q8/view?usp=sharing';
     link.download = 'Andrea_Aguirre_Ruiz_CV.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
