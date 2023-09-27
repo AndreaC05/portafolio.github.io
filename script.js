@@ -27,10 +27,11 @@ function efectoHabilidades(){
 		habilidades[2].classList.add("python");
 		habilidades[3].classList.add("wordpress");
 		habilidades[4].classList.add("sql");
-		habilidades[5].classList.add("comunicacion");
-		habilidades[6].classList.add("trabajo");
-		habilidades[7].classList.add("creatividad");
-		habilidades[8].classList.add("dedicacion");
+		habilidades[5].classList.add("reactjs");
+		habilidades[6].classList.add("comunicacion");
+		habilidades[7].classList.add("trabajo");
+		habilidades[8].classList.add("creatividad");
+		habilidades[9].classList.add("dedicacion");
 	}
 }
 //detecto el strolling para aplicar la animacion de la barra de habilidades
@@ -40,7 +41,7 @@ window.onscroll = function(){
 
 document.getElementById('btn-descargar').addEventListener('click', function() {
     var link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1E1rbH_44SHEeBGWbI6pT4_2pzUCVnirT/view?usp=sharing';
+    link.href = 'https://drive.google.com/file/d/1e-0Ic1AkIqK4TL2oqOVhoEWFOmbAROV8/view?usp=drive_link';
     link.download = 'Andrea_Aguirre_Ruiz_CV.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
